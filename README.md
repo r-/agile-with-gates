@@ -1,4 +1,4 @@
-# Agile-with-Gates Document Templates
+# Agile with Gates - Document Templates
 
 **By Maker Norr**
 
@@ -215,3 +215,4 @@ If your project grows, you can split the TDD into:
 ## License
 
 These templates are free to use, modify, and share. Attribution to [Maker Norr](https://makernorr.se) is appreciated but not required.
+
