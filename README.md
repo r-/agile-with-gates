@@ -1,6 +1,5 @@
 # Agile with Gates - Document Templates
 
-**By Maker Norr**
 
 A lightweight, copy-and-use template kit for running product development with the **agile-with-gates** method — combining sprint-based delivery with clear decision points (gates) to keep projects on track.
 
@@ -214,5 +213,6 @@ If your project grows, you can split the TDD into:
 
 ## License
 
-These templates are free to use, modify, and share. Attribution to [Maker Norr](https://makernorr.se) is appreciated but not required.
+These templates are free to use, modify, and share. Attribution to r- is appreciated but not required.
+
 
