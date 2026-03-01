@@ -1,6 +1,5 @@
 # Agile with Gates - Document Templates
 
-
 A lightweight, copy-and-use template kit for running product development with the **agile-with-gates** method — combining sprint-based delivery with clear decision points (gates) to keep projects on track.
 
 These templates work for **apps, games, services, and any product** you want to take from idea to launch.
@@ -49,6 +48,31 @@ At each gate: **go / adjust / stop.**
 
 ---
 
+## Testing workflow (fast teams)
+
+This template kit supports two common testing styles. Pick one per project (or per milestone) and be consistent.
+
+### Style A — Continuous verification (classic TDD)
+- tests are written early
+- tests are run frequently during implementation
+- failures are fixed immediately
+
+### Style B — Batch verification (fast iteration)
+For very fast teams, it can be more efficient to:
+- **plan tests at the start**
+- **implement quickly**
+- run a focused **Test Phase** near the end of the sprint (or at the milestone gate)
+
+If you use batch verification, define a **Test Phase Gate** in each sprint doc:
+
+**Test Phase Gate (must be green before closing sprint/milestone)**
+- planned tests exist (from sprint tasks)
+- full test suite is green (or agreed subset)
+- demo/smoke is green
+- failures are mapped to tasks and resolved (or explicitly deferred)
+
+---
+
 ## Templates included
 
 ```
@@ -60,7 +84,7 @@ templates/
 ├── TDD.md                      # Technical Design Document (architecture + test plan)
 ├── BACKLOG.md                  # Prioritized work items with DoD
 └── sprints/
-    └── SPRINT_TEMPLATE.md      # Sprint scope, demo checklist, retro
+    └── SPRINT_TEMPLATE.md      # Sprint scope, tasks, test phase gate, demo, retro
 ```
 
 ### What goes where
@@ -71,8 +95,8 @@ templates/
 | Problem, goals, MVP scope, non-goals | **PRD.md** or **GDD.md** |
 | Links, comparisons, spike results | **RESEARCH.md** |
 | Architecture, modules, contracts, test plan | **TDD.md** |
-| Prioritized tasks with DoD | **BACKLOG.md** |
-| Sprint scope, demo, retro | **/sprints/SPRINT_NN.md** |
+| Prioritized work items with DoD | **BACKLOG.md** |
+| Sprint scope, tasks, demo, retro | **/sprints/SPRINT_NN.md** |
 
 ### PRD vs GDD — which one?
 
@@ -165,11 +189,12 @@ Uses: **GDD.md** · RESEARCH.md · TDD.md · BACKLOG.md · ONBOARDING.md · Spri
 | **Sprint** | A short work period: pick scope → build → test → demo → retro |
 | **Gate** | A checkpoint: go / adjust / stop based on what you've learned |
 | **DoD** | Definition of Done — checklist that defines when an item is _complete_ |
-| **Milestone** | A larger delivery target (e.g. "MVP for user testing"), often spanning multiple sprints |
+| **Milestone** | A delivery target (often 1–2 sprints for fast teams) |
 | **P1 / P2 / P3** | Priority: Must / Should / Could |
 | **Spike** | A time-boxed experiment to reduce uncertainty |
 | **Demo** | Showing what actually works in a runnable build |
 | **Retro** | Short reflection: what worked, what was hard, what to improve |
+| **Test Phase** | A focused verification block near the end of sprint/milestone (batch verification style) |
 
 ---
 
@@ -182,6 +207,7 @@ Uses: **GDD.md** · RESEARCH.md · TDD.md · BACKLOG.md · ONBOARDING.md · Spri
 | Scope creeps silently | Write non-goals. Review at gates |
 | DoD is vague | Make every check testable: "user can X" not "X works" |
 | Skipping retro | Even 5 minutes of reflection improves the next sprint |
+| Batch testing becomes chaos | Use a Test Phase Gate + map failures back to sprint tasks |
 
 ---
 
@@ -214,5 +240,6 @@ If your project grows, you can split the TDD into:
 ## License
 
 These templates are free to use, modify, and share. Attribution to r- is appreciated but not required.
+
 
 
